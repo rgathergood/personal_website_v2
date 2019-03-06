@@ -1,0 +1,74 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$mat-rob-primary: (
+    50 : #edf5ff,
+    100 : #d1e7ff,
+    200 : #b2d7ff,
+    300 : #93c7ff,
+    400 : #7cbbff,
+    500 : #65afff,
+    600 : #5da8ff,
+    700 : #539fff,
+    800 : #4996ff,
+    900 : #3786ff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #e1ecff,
+    A700 : #c8dcff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-rob-accent: (
+    50 : #fff9eb,
+    100 : #ffefcd,
+    200 : #ffe5ab,
+    300 : #feda89,
+    400 : #fed270,
+    500 : #feca57,
+    600 : #fec54f,
+    700 : #febd46,
+    800 : #feb73c,
+    900 : #fdab2c,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffeed6,
+    A700 : #ffe3bd,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$rob-app-primary: mat-palette($mat-rob-primary);
+$rob-app-accent:  mat-palette($mat-rob-accent, A200, A100, A400);
+$rob-app-warn:    mat-palette($mat-red);
+$rob-app-theme: mat-light-theme($rob-app-primary, $rob-app-accent, $rob-app-warn);
+@include angular-material-theme($rob-app-theme);
