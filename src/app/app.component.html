@@ -1,12 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<app-nav-bar></app-nav-bar>
-<div id="about">
-  <div style="height: 1000px;">
-      <app-about></app-about>
-  </div>
+<div id="nav">
+  <app-nav-bar></app-nav-bar>
 </div>
-<div id="projects">
+<div id="about" class="section">
+    <app-about></app-about>
+</div>
+<div id="timeline" class="section">
     <app-timeline></app-timeline>
 </div>
-<app-grid></app-grid>
-<app-contact-form></app-contact-form>
+<div id="projects" class="section">
+  <app-grid></app-grid>
+</div>
+<div id="contact" class="section">
+  <app-contact-form></app-contact-form>
+</div>
+<div>
+  <app-footer></app-footer>
+</div>

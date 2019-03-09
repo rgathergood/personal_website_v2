@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FIRESTORE_CONFIG } from './firestore.config';
+import { FooterComponent } from './footer/footer.component';
 import { GridComponent } from './grid/grid.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -27,6 +28,7 @@ import { TimelineComponent } from './timeline/timeline.component';
     TimelineComponent,
     ContactFormComponent,
     AboutComponent,
+    FooterComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(FIRESTORE_CONFIG),
