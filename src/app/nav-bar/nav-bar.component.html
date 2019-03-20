@@ -1,6 +1,6 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" @fade>
   <mat-toolbar-row>
-      <a mat-button *ngFor="let item of navbarItems" [href]="item.url">
+      <a mat-button *ngFor="let item of navbarItems" [routerLink]="[item.url]">
           <mat-icon *ngIf="item.icon">{{item.icon}}</mat-icon>
         {{item.displayText}}
       </a>
